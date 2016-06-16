@@ -1,0 +1,78 @@
+/*
+	Author: Daniel Ortega
+	Template Name: imgzoom
+	Version: 1.0
+*/
+@import (less)'./bootstrap.css';
+@import (less)'./jq.ui-1.10.3.css';
+@import './mixins';
+/*-------------------------------*/
+.border(@color:#CCC){
+	border:1px solid @color;
+}
+/*-------------------------------*/
+body{
+	overflow-y:hidden;
+	scroll:none;
+	img.iz-zoom{
+		cursor:pointer;
+		width:150px;
+		height:100px;
+		margin-left:15px;
+		margin-top:15px;
+	}
+	>div.iz-ini{
+		position:absolute;
+		display:none;
+		width:100%;
+		top:0px;
+		left:0px;
+		background:url(../img/png/imgzoom-bg.png);
+	}
+	>div#iz-bg{
+		z-index:1000;
+		height:100%;
+	}
+	>div#iz-img{
+		z-index:1001;
+		background:none;
+		height:100%;
+		overflow:hidden;
+		>div{
+			width:auto;
+		}
+	}
+	>div#iz-head{
+		z-index:1001;
+		top:-50px;
+		height:50px;
+		>div#iz-menu{
+			background:none;
+			.border(#30312B);
+			>div.navbar-header{
+				>a.navbar-brand{
+					padding:0px;
+						cursor:default;
+					>img#logo{
+						margin:5px 10px;
+					}
+				}
+			}
+			a{
+				background:none;
+				color:#FFF;
+			}
+			.dropdown-menu{
+				background:none;
+			}
+		}
+	}
+	>div#iz-foot{
+		z-index:1001;
+		top:auto;
+		bottom:-50px;
+		height:100px;
+		.border(#30312B);
+	}
+}
+/*-------------------------------*/

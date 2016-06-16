@@ -1,0 +1,24 @@
+-#
+	---------------------
+	Author: Daniel Ortega
+	Project Name: imgzoom
+	Version: 1.0
+	---------------------
+
+%html
+	%head
+		%meta{:'http-equiv'=>'Content-Type',:content=>'text/html; charset=ISO-8859-1'}
+		%meta{:'http-equiv'=>'X-UA-Compatible',:content=>'IE=edge'}
+		%meta{:name=>'viewport',:content=>'width=device-width, initial-scale=1.0'}
+		%link{:type=>'text/css',:rel=>'stylesheet',:href=>'./css/style.css'}
+		%link{:href=>'//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css',:rel=>'stylesheet'}
+	%body
+		-# items
+		%img{:src=>'./img/01.jpg',:class=>'iz-zoom'}
+		%img{:src=>'./img/02.jpg',:class=>'iz-zoom'}
+		%img{:src=>'./img/03.jpg',:class=>'iz-zoom'}
+
+		%script{:src=>'./js/jq-1.10.1.js'}
+		%script{:src=>'./js/jq.ui-1.10.3.js'}
+		%script{:src=>'./js/bootstrap.js'}
+		%script{:src=>'./js/jq.script.js'}

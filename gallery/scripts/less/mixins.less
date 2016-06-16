@@ -1,0 +1,26 @@
+.item{
+	.round(@radius:5px){
+	  border-radius: @radius;
+	  -moz-border-radius: @radius;
+	  -webkit-border-radius: @radius;
+	}
+	.background(){		
+		background: #20202f;
+		background: -moz-linear-gradient(top,  #20202f 56%, #000000 100%);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(56%,#20202f), color-stop(100%,#000000));
+		background: -webkit-linear-gradient(top,  #20202f 56%,#000000 100%);
+		background: -o-linear-gradient(top,  #20202f 56%,#000000 100%);
+		background: -ms-linear-gradient(top,  #20202f 56%,#000000 100%);
+		background: linear-gradient(to bottom,  #20202f 56%,#000000 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#20202f', endColorstr='#000000',GradientType=0);
+	}
+	.menu-btn(){
+		padding:5px 15px;
+		color:#777;
+		>span.navbar-btn{
+			margin-bottom:5px;
+			color:#777;
+			font-size:18px;
+		}
+	}
+}
